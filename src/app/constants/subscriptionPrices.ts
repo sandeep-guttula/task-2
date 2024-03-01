@@ -12,17 +12,17 @@ export const subscriptionPrices:SubscriptionPrices[] = [
     },
     {
       years: "2-5",
-      src: "../assets/images/image2.png",
+      src: "../assets/images/image2.svg",
       price: 1799
     },
     {
       years: "5-10",
-      src: "../assets/images/image3.png",
+      src: "../assets/images/image3.svg",
       price: 2499
     },
     {
       years: "0-2",
-      src: "../assets/images/image5.png",
+      src: "../assets/images/image4.svg",
       price: 3299
     }
 ]
