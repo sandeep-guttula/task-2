@@ -32,9 +32,9 @@
     </div>
 
     <!-- Interview type card container -->
-    <div class="container mt-5 gx-3  gap-4 row" >
+    <div class="container row" >
         @for(data of cardInfo;track data.title){
-            <div class="col ms-3 gx-2 " >
+            <div class="col-6 " >
                 <app-card [cardData]="data" ></app-card>
             </div>
         }
