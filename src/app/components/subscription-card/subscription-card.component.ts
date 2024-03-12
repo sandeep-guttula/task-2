@@ -10,11 +10,6 @@ import { SubscriptionPrices } from "../../constants/subscriptionPrices"
 })
 export class SubscriptionCardComponent {
 
+  // Input decorator to get the subscription details from the parent component (app-component)
   @Input() cardData!:SubscriptionPrices
-
-  constructor() {
-    console.log(this.cardData);
-  }
-  
-
 }

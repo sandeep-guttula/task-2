@@ -1,26 +1,31 @@
-<div class="container d-flex flex-column align-items-center gap-4 py-4 " style="box-shadow: 0px 2px 12px 0px rgba(111, 133, 221, 0.12);width:300px;" >
-    <img src={{cardData.src}} height="120" width="47.65" />
-    <h6>Experience range : {{cardData.years}} years</h6>
-    <h3>₹{{cardData.price}}/-</h3>
-    <div class="container px-0 d-flex justify-content-between align-items-center  " >
-        <button class="btn bg-secondary-subtle" style="background: #E7DFFF;color: #c2afff;" >
-            <i class="fa-solid fa-minus" style="height: 1.2px;" ></i>
-        </button>
-        <span class="fs-6  fw-normal  " >1 Session</span>
-        <button class="btn" style="background-color: #F0EBFF;color: #6834FF;" >
-            <i class="fa-solid fa-plus"></i>
-        </button>
-    </div>
-
-    <div class="container px-0 d-flex justify-content-between align-items-center  " >
-        <button class="btn bg-secondary-subtle" style="background: #E7DFFF;color: #c2afff;" >
-            <i class="fa-solid fa-minus" style="height: 1.2px;" ></i>
-        </button>
-        <span class="fs-6 fw-normal  " >30 mins</span>
-        <button class="btn" style="background-color: #F0EBFF;color: #6834FF;" >
-            <i class="fa-solid fa-plus"></i>
-        </button>
-    </div>
-
-    <button class="btn container " style="background-color: #F0EBFF;color: #6834FF;" >Buy</button>
+<div
+  class="text-center py-4 px-3"
+  style="box-shadow: 0px 2px 12px 0px rgba(111, 133, 221, 0.12); width: 300px"
+>
+  <img class="my-3" src="{{ cardData.src }}" height="120" width="47.65" />
+  <h6 class="my-3">Experience range : {{ cardData.years }} years</h6>
+  <h3 class="my-3">₹{{ cardData.price }}/-</h3>
+  <div
+    class="container px-0 d-flex justify-content-between align-items-center my-3"
+  >
+    <button class="btn bg-secondary-subtle btn-purple btn-purple-disable">
+      <img src="assets/icons/minus.svg" alt="-" />
+    </button>
+    <span class="fs-6 fw-normal">1 Session</span>
+    <button class="btn btn-purple">
+      <img src="assets/icons/plus.svg" alt="+" />
+    </button>
+  </div>
+  <div
+    class="container px-0 d-flex justify-content-between align-items-center my-3"
+  >
+    <button class="btn bg-secondary-subtle btn-purple btn-purple-disable">
+      <img src="assets/icons/minus.svg" alt="-" />
+    </button>
+    <span class="fs-6 fw-normal">30 mins</span>
+    <button class="btn btn-purple">
+      <img src="assets/icons/plus.svg" alt="+" />
+    </button>
+  </div>
+  <button class="btn btn-purple container my-3">Buy</button>
 </div>

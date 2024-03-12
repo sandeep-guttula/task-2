@@ -7,41 +7,41 @@ export interface SubscriptionPrices {
 export const subscriptionPrices:SubscriptionPrices[] = [
     {
       years: "0-2",
-      src: "../assets/images/image1.png",
+      src: "/assets/images/image1.svg",
       price: 1099
     },
     {
       years: "2-5",
-      src: "../assets/images/image2.svg",
+      src: "/assets/images/image2.svg",
       price: 1799
     },
     {
       years: "5-10",
-      src: "../assets/images/image3.svg",
+      src: "/assets/images/image3.svg",
       price: 2499
     },
     {
       years: "0-2",
-      src: "../assets/images/image4.svg",
+      src: "/assets/images/image4.svg",
       price: 3299
     }
 ]
 
 export interface CardData {
-  src:string;
+  imagePath:string;
   title: string;
-  para:string
+  description:string
 }
 
 export const cardData: CardData[] = [
   {
-    src:"../assets/images/oldman.png",
-    para: "For professional/leadership roles with 15+ years of industry experience and special requirements",
+    imagePath:"/assets/images/oldman.png",
+    description: "For professional/leadership roles with 15+ years of industry experience and special requirements",
     title: "Specialized Interview"
   },
   {
-    src:"../assets/images/interviews.png",
-    para: "Practice with our predefined templates and AI based interviews",
+    imagePath:"/assets/images/interviews.png",
+    description: "Practice with our predefined templates and AI based interviews",
     title: "Oneway Interview"
   },
 ] 

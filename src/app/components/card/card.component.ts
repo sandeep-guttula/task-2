@@ -10,6 +10,7 @@ import { CardData } from '../../constants/subscriptionPrices';
 })
 export class CardComponent {
 
+  // Input decorator to get the cardData from the parent component
   @Input() cardData!:CardData
 
 }
