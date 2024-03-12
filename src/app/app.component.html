@@ -34,7 +34,7 @@
     <!-- Interview type card container -->
     <div class="container row" >
         @for(data of cardInfo;track data.title){
-            <div class="col-6 " >
+            <div class="col-12 col-md-6 " >
                 <app-card [cardData]="data" ></app-card>
             </div>
         }
