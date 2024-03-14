@@ -1,6 +1,6 @@
 <div>
     <app-navbar></app-navbar>
-<div class="container  d-flex flex-column align-items-center row-gap-2 mb-5 " >
+<div class="container   mb-5 " >
     <div class="row d-flex justify-content-end w-100 " >
         <!-- breadcrumbs  -->
         <div class=" col-11 my-4 d-flex align-items-center gap-3 " >
@@ -13,7 +13,7 @@
             Buy Interviews
         </div>
         
-        <div class="col-1 text-end  my-4 " >
+        <div class="col-1 text-end  my-4 cursor-pointer" >
             <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M0.964772 11.2937C0.694286 11.2937 0.465869 11.201 0.279522 11.0156C0.0931739 10.8302 0 10.603 0 10.3339C0 10.0648 0.0931739 9.8359 0.279522 9.64723C0.465869 9.45856 0.694286 9.36422 0.964772 9.36422H15.0352C15.3057 9.36422 15.5341 9.45693 15.7205 9.64235C15.9068 9.82775 16 10.055 16 10.3241C16 10.5932 15.9068 10.8221 15.7205 11.0107C15.5341 11.1994 15.3057 11.2937 15.0352 11.2937H0.964772ZM0.964772 6.96474C0.694286 6.96474 0.465869 6.87204 0.279522 6.68664C0.0931739 6.50122 0 6.27397 0 6.0049C0 5.7358 0.0931739 5.50692 0.279522 5.31825C0.465869 5.12958 0.694286 5.03524 0.964772 5.03524H15.0352C15.3057 5.03524 15.5341 5.12794 15.7205 5.31334C15.9068 5.49876 16 5.72601 16 5.99508C16 6.26418 15.9068 6.49306 15.7205 6.68173C15.5341 6.8704 15.3057 6.96474 15.0352 6.96474H0.964772ZM0.964772 2.63576C0.694286 2.63576 0.465869 2.54305 0.279522 2.35763C0.0931739 2.17223 0 1.94498 0 1.67589C0 1.4068 0.0931739 1.17792 0.279522 0.989247C0.465869 0.800574 0.694286 0.706238 0.964772 0.706238H15.0352C15.3057 0.706238 15.5341 0.798946 15.7205 0.984364C15.9068 1.16977 16 1.39701 16 1.66611C16 1.9352 15.9068 2.16408 15.7205 2.35275C15.5341 2.54142 15.3057 2.63576 15.0352 2.63576H0.964772Z" fill="#97A1B2"/>
             </svg>
@@ -23,18 +23,18 @@
 
 
     <!-- subscription cards container -->
-    <div class="row w-100 " >
+    <div class="row w-100" >
         @for(data of subscriptionData; track data.price){
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3" >
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-2 " >
                 <app-subscription-card [cardData]="data" ></app-subscription-card>
             </div>
         }
     </div>
 
     <!-- Interview type card container -->
-    <div class="w-100  row" >
+    <div class="w-100 mt-2  row" >
         @for(data of cardInfo;track data.title){
-            <div class="col-12 col-md-6 " >
+            <div class="col-12 mt-2  col-md-6 " >
                 <app-card [cardData]="data" ></app-card>
             </div>
         }

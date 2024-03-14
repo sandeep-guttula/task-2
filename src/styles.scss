@@ -38,20 +38,45 @@ box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
     box-shadow: 0px 2px 12px 0px rgba(111, 133, 221, 0.12);
 }
 
+.description{
+    margin: 1rem 6rem;
+}
+
+.cursor-pointer{
+    cursor: pointer;
+}
+
 .button{
     border: none;
     outline: none;
-    padding: 10px 20px;
-    border-radius: 7px;
+    padding: 10px;
+    margin: 0px 3px;
+    border-radius: 6px;
 }
+
+.button-md{
+    border: none;
+    outline: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    width: 60px;
+    font-size: 14px;
+}
+
 .button-sm{
     border: none;
     outline: none;
-    padding: 10px 12px;
-    border-radius: 7px;
+    border-radius: 6px;
+    padding: 6px 12px;
 }
 
-.button:hover {
+.button:hover, .button-sm:hover, .button-md:hover {
     background: #dfd6f9;
     color: #6834FF;
+}
+
+@media screen and (max-width: 340px){
+    .description{
+        margin: 1rem;
+    }
 }
