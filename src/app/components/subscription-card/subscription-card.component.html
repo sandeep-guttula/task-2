@@ -1,14 +1,13 @@
 <div
-  class="text-center py-4 px-3"
-  style="box-shadow: 0px 2px 12px 0px rgba(111, 133, 221, 0.12); width: 300px"
+  class="text-center py-4 px-3 card-shadow rounded-3 "
 >
   <img class="my-3" src="{{ cardData.src }}" height="120" width="47.65" />
   <h6 class="my-3">Experience range : {{ cardData.years }} years</h6>
   <h3 class="my-3">₹{{ cardData.price }}/-</h3>
   <div
-    class="container px-0 d-flex justify-content-between align-items-center my-3"
+    class=" px-0 d-flex justify-content-between align-items-center my-3"
   >
-    <button class="btn bg-secondary-subtle btn-purple btn-purple-disable">
+    <button class="btn btn-purple btn-purple-disable">
       <img src="assets/icons/minus.svg" alt="-" />
     </button>
     <span class="fs-6 fw-normal">1 Session</span>
@@ -17,15 +16,15 @@
     </button>
   </div>
   <div
-    class="container px-0 d-flex justify-content-between align-items-center my-3"
+    class=" px-0 d-flex justify-content-between align-items-center my-3"
   >
-    <button class="btn bg-secondary-subtle btn-purple btn-purple-disable">
+    <button class="button-sm btn-purple btn-purple-disable">
       <img src="assets/icons/minus.svg" alt="-" />
     </button>
     <span class="fs-6 fw-normal">30 mins</span>
-    <button class="btn btn-purple">
+    <button class="button-sm btn-purple">
       <img src="assets/icons/plus.svg" alt="+" />
     </button>
   </div>
-  <button class="btn btn-purple container my-3">Buy</button>
+  <button class="button btn-purple button-width  my-3">Buy</button>
 </div>

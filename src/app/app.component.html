@@ -1,7 +1,7 @@
 <div>
     <app-navbar></app-navbar>
-<div class="container d-flex flex-column align-items-center row-gap-2 mb-5 " >
-    <div class="container  row " >
+<div class="container  d-flex flex-column align-items-center row-gap-2 mb-5 " >
+    <div class="row d-flex justify-content-end w-100 " >
         <!-- breadcrumbs  -->
         <div class=" col-11 my-4 d-flex align-items-center gap-3 " >
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -23,16 +23,16 @@
 
 
     <!-- subscription cards container -->
-    <div class="container  row " >
+    <div class="row w-100 " >
         @for(data of subscriptionData; track data.price){
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 " >
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3" >
                 <app-subscription-card [cardData]="data" ></app-subscription-card>
             </div>
         }
     </div>
 
     <!-- Interview type card container -->
-    <div class="container row" >
+    <div class="w-100  row" >
         @for(data of cardInfo;track data.title){
             <div class="col-12 col-md-6 " >
                 <app-card [cardData]="data" ></app-card>
